@@ -11,7 +11,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #333;
-  background-color: #f7f7f7;
+  background-color: #e9967a;
+  overflow-y: auto;
 }
 
 /* Header Styles */
@@ -19,10 +20,13 @@ body {
 header {
   background-color: #333;
   color: #fff;
-  padding: 20px;
+  height: 60px;
+  width: 100%;
   text-align: center;
   font-weight: bold;
   font-size: 24px;
+  position: fixed;
+  top: 0;
 }
 
 header p {
@@ -39,7 +43,7 @@ header p {
 /* Section Styles */
 
 .home-section {
-  height: 35vh;
+  height: calc(100vh - 100px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,14 +54,14 @@ header p {
   font-size: 18px;
 }
 
-section div {
+main div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-section div img {
+main div img {
   width: 100%;
   height: auto;
 }
@@ -67,8 +71,11 @@ section div img {
 footer {
   background-color: #333;
   color: #fff;
-  padding: 10px;
+  height: 25px;
+  width: 100%;
   text-align: center;
+  position: absolute;
+  bottom: 0;
 }
 
 footer span {
