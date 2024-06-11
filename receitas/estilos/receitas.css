@@ -10,7 +10,8 @@
 .card {
   background-color: #f5deb3;
   padding: 20px;
-  width: 15%;
+  width: 16%;
+  height: auto;
 }
 
 .ingredientes {
@@ -27,20 +28,20 @@
   text-align: left;
 }
 
-.receitas img {
+.card img {
   width: 100%;
   height: auto;
 }
-.receitas h3 {
+.card h3 {
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 15px;
 }
-.receitas ul {
+.card ul {
   list-style-type: disc;
   padding-left: 20px;
   margin-bottom: 20px;
 }
-.receitas p {
+.card p {
   font-size: 16px;
 }
