@@ -38,7 +38,7 @@ header p {
 
 /* Section Styles */
 
-section {
+.home-section {
   height: 35vh;
   display: flex;
   flex-direction: column;
