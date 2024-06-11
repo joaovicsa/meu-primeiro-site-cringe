@@ -1,0 +1,77 @@
+/** @format */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+/* Header Styles */
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+header p {
+  color: #fff;
+}
+
+/* Logotipo Styles */
+
+.Logotipo {
+  width: 50px;
+  height: 50px;
+}
+
+/* Section Styles */
+
+section {
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #e9967a;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+section div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+section div img {
+  width: 100%;
+  height: auto;
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+footer span {
+  font-weight: normal;
+  font-size: 14px;
+}
