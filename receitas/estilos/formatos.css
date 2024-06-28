@@ -90,28 +90,27 @@ button[type='submit']:hover {
   height: auto;
 }
 
-.card img {
+.card-img-top {
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   height: auto;
 }
 
-.ingredientes {
+.card-text {
   margin-top: 2rem;
 }
 
-.preparo {
+.card-body {
   width: 85%;
   padding-top: 2rem;
-  border-top: 1px solid black;
 }
 
-.preparo p {
+.card-body p {
   text-align: left;
 }
 
-.card h3 {
+.card-title {
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 15px;
