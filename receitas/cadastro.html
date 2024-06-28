@@ -1,85 +1,82 @@
-<!-- @format -->
-
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Receitas da Tia Jurema</title>
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous" />
-    <link rel="stylesheet" type="text/css" href="/receitas/estilos/formatos.css" />
-    <link rel="stylesheet" type="text/css" href="/receitas/estilos/cadastro.css" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/receitas/estilos/formatos.css" />
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Home</a>
-        <a class="navbar-brand" href="#">Receitas</a>
-        <a class="navbar-brand" href="#">Cadastro</a>
+        <div class="container-fluid">
+          <div class="d-flex">
+            <a class="navbar-brand" href="#">Home</a>
+            <a class="navbar-brand" href="#">Receitas</a>
+            <a class="navbar-brand active" href="#">Cadastro</a>
+          </div>
+        </div>
       </nav>
     </header>
-    <main class="cadastro">
-      <h2>Efetue seu Cadastro</h2>
-      <form class="form-class">
-        <div class="form-group">
-          <label for="nome">Nome</label>
-          <input type="text" class="form-control" id="nome" required />
-        </div>
-        <div class="form-group">
-          <label for="email">E-mail</label>
-          <input type="email" class="form-control" id="email" required />
-        </div>
-        <div class="cep">
-          <label for="cep">CEP</label
-          ><input type="text" class="form-control" id="cep" required />
-        </div>
-        <div class="form-group">
-          <label for="rua">Rua</label>
-          <input type="text" class="form-control" id="rua" required />
-        </div>
-        <div>
-          <div class="numero">
-            <label for="numero">N°</label>
-            <input type="text" class="form-control" id="numero" required />
-          </div>
-          <div class="complemento">
-            <label for="complemento">Complemento</label>
-            <input type="text" class="form-control" id="complemento" />
+    <main class="container my-5">
+      <h2 class="text-left mb-4">Efetue seu Cadastro</h2>
+      <form>
+        <div class="form-group row">
+          <label for="nome" class="col-sm-2 col-form-label">Nome</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" id="nome" required />
           </div>
         </div>
-        <div>
-          <div class="form-group cidade">
-            <label for="cidade">Cidade</label>
+        <div class="form-group row">
+          <label for="email" class="col-sm-2 col-form-label">E-mail</label>
+          <div class="col-sm-8">
+            <input type="email" class="form-control" id="email" required />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="cep" class="col-sm-2 col-form-label">CEP</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="cep" required />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="rua" class="col-sm-2 col-form-label">Rua</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" id="rua" required />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="numero" class="col-sm-2 col-form-label">N°</label>
+          <div class="col-sm-2">
+            <input type="number" class="form-control" id="numero" required />
+          </div>
+          <label for="complemento" class="col-sm-2 col-form-label">Complemento</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="complemento" required />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="cidade" class="col-sm-2 col-form-label">Cidade</label>
+          <div class="col-sm-6">
             <input type="text" class="form-control" id="cidade" required />
           </div>
-          <div class="form-group uf">
-            <label for="uf">UF</label>
+          <label for="uf" class="col-sm-1 col-form-label">UF</label>
+          <div class="col-sm-1">
             <input type="text" class="form-control" id="uf" required />
           </div>
-          <button type="submit" class="btn btn-dark">Cadastrar</button>
+          <div class="col-sm-2 d-flex justify-content-end align-items-center">
+            <button type="submit" class="btn btn-dark">Cadastrar</button>
+          </div>
         </div>
       </form>
     </main>
-    <footer>
+    <footer class="footer">
       <span>©Jurema 2022</span>
     </footer>
-    <!-- Bootstrap JS, Popper.js, and jQuery -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.10/dist/umd/popper.min.js"
-      integrity="sha384-Qbqq1+Y4Jr5M6eB3TTb3p3JuarA3DdHH+21j1rypMj6hOie43gvU1cbQxmE6JgDQ"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shcAHJCY4icLkCvXVd+FFJ4jEtQSfQFvQJb8B"
-      crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   </body>
 </html>
