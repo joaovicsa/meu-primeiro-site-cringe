@@ -1,0 +1,59 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Receitas da Tia Jurema</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/receitas/estilos/formatos.css" />
+  <style>
+    .navbar-nav .nav-item .nav-link.active {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="fixed-header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="d-flex">
+          <a class="navbar-brand" href="/receitas/home.html">Home</a>
+          <a class="navbar-brand" href="/receitas/receitas.html">Receitas</a>
+          <a class="navbar-brand" href="/receitas/cadastro.html">Cadastro</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="home-section">
+      <div>
+        <img class="Logotipo" src="/receitas/midia/home.png" alt="Receitas da Tia Jurema" />
+        <h2>Receitas da Tia Jurema</h2>
+      </div>
+      <p><strong>Bem-vindo(a) ao site da Tia Jurema.</strong></p>
+      <p><strong>Conheça deliciosas receitas para o dia a dia.</strong></p>
+    </section>
+
+  </main>
+  <footer class="footer text-center">
+    <span>©Jurema 2022</span>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('nav a').click(function () {
+        $('nav a').removeClass('active')
+        $(this).addClass('active')
+      })
+    })
+  </script>
+</body>
+
+</html>
